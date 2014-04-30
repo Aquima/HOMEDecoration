@@ -1,0 +1,96 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+	xmlns:android="http://schemas.android.com/apk/res/android"
+	android:orientation="vertical"
+	android:layout_width="fill_parent"
+	android:layout_height="fill_parent"
+	android:background="@drawable/fondo">
+
+	<!-- Titulo (TEXTO) -->
+	<LinearLayout
+		android:id="@+id/lTxt1i"
+		android:layout_width="wrap_content"
+		android:layout_height="wrap_content">
+		<LinearLayout
+			android:id="@+id/lTxt2i"
+			android:layout_width="wrap_content"
+			android:layout_height="wrap_content">
+			<TextView
+				android:textColor="#613916"
+				android:textAppearance="?android:attr/textAppearanceMedium"
+				android:text="INSTRUCCIONES "
+				android:layout_width="wrap_content"
+				android:id="@+id/txt_tituloi"
+				android:layout_height="wrap_content"
+				android:layout_alignParentLeft="true"></TextView>
+		</LinearLayout>
+	</LinearLayout>
+
+	<!-- *************** FIN HUINCHA TITULO ************** -->
+
+	<LinearLayout
+		android:id="@+id/layScroll1"
+		android:layout_height="wrap_content"
+		android:layout_width="fill_parent"
+		android:gravity="center_horizontal">
+		<LinearLayout
+			android:id="@+id/layScroll2"
+			android:layout_width="fill_parent"
+			android:layout_height="wrap_content">
+			<ScrollView
+				android:id="@+id/ScrollView01"
+				android:layout_width="fill_parent"
+				android:layout_height="fill_parent">
+				<LinearLayout
+					android:id="@+id/linearInstrucciones"
+					android:layout_height="wrap_content"
+					android:layout_width="fill_parent"
+					android:gravity="center_horizontal">
+					<TextView
+						android:typeface="sans"
+						android:textColor="#FFFFFF"
+						android:gravity="left"
+						android:layout_height="wrap_content"
+						android:id="@+id/textoInstrucciones"
+						android:text="Selecciona un mueble. Luego posiciónalo, moviéndolo con los dedos. Puedes girarlo, hacer zoom y moverlo sobre la imagen.
+Finalmente podrás publicar la foto.
+Observación: el mueble no está a escala real, tú lo acomodas para ver como quedara en tu hogar.
+"
+						android:layout_width="fill_parent"
+						android:layout_centerVertical="true"
+						android:layout_alignParentLeft="true"
+						android:textStyle="italic"></TextView>
+				</LinearLayout>
+			</ScrollView>
+		</LinearLayout>
+	</LinearLayout>
+
+	<!-- botón continuar -->
+	<RelativeLayout
+	android:orientation="vertical"
+	android:layout_width="fill_parent"
+	android:layout_height="fill_parent">
+	<LinearLayout  
+		android:id="@+id/linearC1"
+		android:layout_width="wrap_content"
+		android:layout_height="wrap_content"
+		android:layout_centerHorizontal="true"
+		android:layout_alignParentBottom="true">
+		<LinearLayout
+		android:id="@+id/linearC2"
+		android:layout_width="wrap_content"
+		android:layout_height="wrap_content">
+			<LinearLayout
+				android:id="@+id/layBtnContinuar"
+				android:layout_height="wrap_content"
+				android:layout_width="wrap_content"
+				android:layout_alignParentBottom="true"
+				
+				>
+			</LinearLayout>
+		</LinearLayout>
+	</LinearLayout>
+	</RelativeLayout>
+
+
+</RelativeLayout>

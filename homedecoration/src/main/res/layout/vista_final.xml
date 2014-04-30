@@ -1,0 +1,173 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+	xmlns:android="http://schemas.android.com/apk/res/android"
+	android:layout_width="fill_parent"
+	android:layout_height="fill_parent"
+	android:background="@drawable/fondo"
+	android:orientation="vertical">
+	
+	
+		<!-- Vista Final (IMG) -->
+	<LinearLayout
+		android:id="@+id/l1"
+		android:layout_height="wrap_content"
+		android:layout_width="wrap_content">
+		<LinearLayout
+			android:id="@+id/l2"
+			android:layout_height="wrap_content"
+			android:layout_width="wrap_content">
+			<ImageView
+				android:layout_height="wrap_content"
+				android:layout_width="wrap_content"
+				android:id="@+id/fotoFinal" />
+		</LinearLayout>
+	</LinearLayout>
+	
+
+	<!-- Titulo VISTA FINAL (TEXTO) -->
+	<LinearLayout
+		android:id="@+id/lTxt1"
+		android:layout_width="wrap_content"
+		android:layout_height="wrap_content">
+		<LinearLayout
+			android:id="@+id/lTxt2"
+			android:layout_width="wrap_content"
+			android:layout_height="wrap_content">
+			<TextView
+				android:textColor="#613916"
+				android:textAppearance="?android:attr/textAppearanceMedium"
+				android:text="VISTA FINAL "
+				android:layout_width="wrap_content"
+				android:id="@+id/txt_titulo"
+				android:layout_height="wrap_content"
+				android:layout_alignParentLeft="true"></TextView>
+		</LinearLayout>
+	</LinearLayout>
+
+
+	<!-- Controles -->
+
+	<RelativeLayout
+		android:layout_width="fill_parent"
+		android:layout_height="fill_parent"
+		android:gravity="right"
+		android:layout_marginTop="50dp">
+
+		<LinearLayout
+			android:layout_width="wrap_content"
+			android:layout_height="wrap_content"
+			android:id="@+id/imageView1"
+			android:layout_centerVertical="true"
+			android:layout_centerHorizontal="true" />
+		<LinearLayout
+			android:layout_width="wrap_content"
+			android:layout_height="wrap_content"
+			android:id="@+id/imageView2"
+			android:layout_centerVertical="true"
+			android:layout_toRightOf="@+id/imageView1" />
+		<LinearLayout
+			android:layout_width="wrap_content"
+			android:layout_height="wrap_content"
+			android:id="@+id/imageView3"
+			android:layout_below="@+id/imageView1"
+			android:layout_centerHorizontal="true" />
+		<LinearLayout
+			android:layout_width="wrap_content"
+			android:layout_height="wrap_content"
+			android:id="@+id/imageView4"
+			android:layout_alignTop="@+id/imageView3"
+			android:layout_toRightOf="@+id/imageView3" />
+	</RelativeLayout>
+
+
+	<!-- BOTON OTRA FOTO(IMG) -->
+	<LinearLayout
+		android:id="@+id/Otra1"
+		android:layout_width="wrap_content"
+		android:layout_height="wrap_content"
+		android:layout_alignParentRight="true">
+		<LinearLayout
+			android:id="@+id/Otra2"
+			android:layout_width="wrap_content"
+			android:layout_height="wrap_content">
+			<ImageView
+				android:id="@+id/Otra3"
+				android:layout_width="wrap_content"
+				android:layout_height="wrap_content"
+				android:src="@drawable/otra"></ImageView>
+		</LinearLayout>
+	</LinearLayout>
+	<!-- fake -->
+	<LinearLayout
+		android:id="@+id/fake_otra1"
+		android:layout_width="wrap_content"
+		android:layout_height="wrap_content"
+		android:layout_alignParentRight="true">
+		<LinearLayout
+			android:id="@+id/fake_otra2"
+			android:layout_width="wrap_content"
+			android:layout_height="wrap_content">
+			<LinearLayout
+				android:id="@+id/fake_otra3"
+				android:layout_height="wrap_content"
+				android:layout_width="wrap_content" />
+		</LinearLayout>
+	</LinearLayout>
+
+
+
+	<!-- BOTON VOLVER(IMG) -->
+	<LinearLayout
+		android:id="@+id/Volver1"
+		android:layout_width="wrap_content"
+		android:layout_height="wrap_content"
+		android:layout_alignParentRight="true">
+		<LinearLayout
+			android:id="@+id/Volver2"
+			android:layout_width="wrap_content"
+			android:layout_height="wrap_content">
+			<ImageView
+				android:id="@+id/Volver3"
+				android:layout_width="wrap_content"
+				android:layout_height="wrap_content"
+				android:src="@drawable/volver"></ImageView>
+		</LinearLayout>
+	</LinearLayout>
+	<!-- fake -->
+	<LinearLayout
+		android:id="@+id/fake_volver1"
+		android:layout_width="wrap_content"
+		android:layout_height="wrap_content"
+		android:layout_alignParentRight="true">
+		<LinearLayout
+			android:id="@+id/fake_volver2"
+			android:layout_width="wrap_content"
+			android:layout_height="wrap_content">
+			<LinearLayout
+				android:id="@+id/fake_volver3"
+				android:layout_height="wrap_content"
+				android:layout_width="wrap_content" />
+		</LinearLayout>
+	</LinearLayout>
+
+
+	<!-- Descripción producto -->
+	<LinearLayout
+		android:id="@+id/lDesc1"
+		android:layout_height="wrap_content"
+		android:layout_width="wrap_content"
+		android:layout_alignParentBottom="true"
+		android:layout_alignParentLeft="true">
+		<LinearLayout
+			android:id="@+id/lDesc2"
+			android:layout_height="wrap_content"
+			android:layout_width="wrap_content">
+			<TextView
+				android:id="@+id/txt_descripcion_producto"
+				android:layout_width="wrap_content"
+				android:layout_height="wrap_content"
+				android:text="TextView"
+				android:textStyle="italic" />
+		</LinearLayout>
+	</LinearLayout>
+</RelativeLayout>

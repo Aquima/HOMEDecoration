@@ -1,0 +1,9 @@
+<component name="libraryTable">
+  <library name="org.apache.httpcomponents.httpclient-4.0">
+    <CLASSES>
+      <root url="jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/org.apache.directory.studio/org.apache.httpcomponents.httpclient/4.0/7800e0a995a1ab234045026017cd75bbe8db9870/org.apache.httpcomponents.httpclient-4.0.jar!/" />
+    </CLASSES>
+    <JAVADOC />
+    <SOURCES />
+  </library>
+</component>

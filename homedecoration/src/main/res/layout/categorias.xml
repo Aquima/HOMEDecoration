@@ -1,0 +1,101 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+	xmlns:android="http://schemas.android.com/apk/res/android"
+	android:orientation="vertical"
+	android:layout_width="fill_parent"
+	android:layout_height="fill_parent"
+	android:background="@drawable/fondo">
+
+
+
+	<!-- Titulo (TEXTO) -->
+	<LinearLayout
+		android:id="@+id/lTxt1"
+		android:layout_width="wrap_content"
+		android:layout_height="wrap_content">
+		<LinearLayout
+			android:id="@+id/lTxt2"
+			android:layout_width="wrap_content"
+			android:layout_height="wrap_content">
+			<TextView
+				android:textColor="#613916"
+				android:textAppearance="?android:attr/textAppearanceMedium"
+				android:text="SELECCIONA TU CATEGORÍA "
+				android:layout_width="wrap_content"
+				android:id="@+id/txt_titulo"
+				android:layout_height="wrap_content"
+				android:layout_alignParentLeft="true"></TextView>
+		</LinearLayout>
+	</LinearLayout>
+
+	<!-- *************** FIN HUINCHA TITULO ************** -->
+
+
+
+	<LinearLayout
+		android:id="@+id/linearLayoutP"
+		android:layout_width="wrap_content"
+		android:layout_height="wrap_content"
+		android:layout_centerHorizontal="true">
+		<LinearLayout
+			android:id="@+id/linearLayoutP1"
+			android:layout_width="wrap_content"
+			android:layout_height="wrap_content">
+			<ListView
+				android:id="@android:id/list"
+				android:layout_width="wrap_content"
+				android:dividerHeight="10dp"
+				android:gravity="center"
+				android:scrollbars="none"
+				android:cacheColorHint="#00000000"
+				android:divider="#00000000"
+				android:fadingEdge="none"
+				android:layout_height="wrap_content">
+			</ListView>
+		</LinearLayout>
+	</LinearLayout>
+
+
+
+
+	<!-- Botón Instrucciones -->
+	<!-- <LinearLayout
+		android:id="@+id/instrucciones_fake1"
+		android:layout_width="wrap_content"
+		android:layout_height="wrap_content"
+		android:layout_alignParentRight="true">
+		<LinearLayout
+			android:id="@+id/instrucciones_fake2"
+			android:layout_width="wrap_content"
+			android:layout_height="wrap_content">
+			<ImageView
+				android:id="@+id/instrucciones_fake3"
+				android:layout_height="wrap_content"
+				android:src="@drawable/instrucciones"
+				android:layout_width="wrap_content"
+				android:layout_gravity="right" />
+		</LinearLayout>
+	</LinearLayout>
+	-->
+
+
+	<LinearLayout
+		android:id="@+id/instrucciones1"
+		android:layout_width="wrap_content"
+		android:layout_height="wrap_content"
+		android:layout_alignParentRight="true">
+		<LinearLayout
+			android:id="@+id/instrucciones2"
+			android:layout_width="wrap_content"
+			android:layout_height="wrap_content">
+			<LinearLayout
+				android:id="@+id/instrucciones"
+				android:layout_height="wrap_content"
+				android:layout_width="wrap_content"/>
+		</LinearLayout>
+	</LinearLayout>
+
+
+
+
+</RelativeLayout>

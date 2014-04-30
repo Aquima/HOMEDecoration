@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+	xmlns:android="http://schemas.android.com/apk/res/android"
+	android:layout_width="fill_parent"
+	android:layout_height="wrap_content"
+	android:background="@drawable/categoria_btn"
+	android:gravity="left|right">
+	<TextView
+		android:id="@+id/labelc"
+		android:layout_width="130dp"
+		android:layout_height="wrap_content"
+		android:layout_marginTop="0dp"
+		android:gravity="center_vertical"
+		android:layout_weight="0.6"
+		android:paddingLeft="20dp"
+		android:paddingTop="10dp"
+		android:text="@+id/labelc"
+		android:textSize="13dp"
+		android:textColor="#454545"
+		android:typeface="monospace"
+		android:textAppearance="?android:attr/textAppearanceSmall" />
+	
+
+</LinearLayout>

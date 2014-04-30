@@ -1,0 +1,133 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+	xmlns:android="http://schemas.android.com/apk/res/android"
+	android:orientation="horizontal"
+	android:layout_width="fill_parent"
+	android:layout_height="fill_parent">
+
+
+	<FrameLayout
+		android:id="@+id/contenedor"
+		android:layout_width="fill_parent"
+		android:layout_height="fill_parent"
+		android:layout_weight="1">
+
+		<!-- acá va la vista de cámara -->
+		<FrameLayout
+			android:id="@+id/frame_camera_preview"
+			android:layout_width="fill_parent"
+			android:layout_height="fill_parent"
+			android:layout_weight="1" />
+
+		<!-- prenda -->
+		<ImageView
+			android:id="@+id/img_prenda"
+			android:layout_width="fill_parent"
+			android:layout_height="fill_parent"
+			android:scaleType="matrix" />
+
+		<!-- Soporte gráfico (PNG con hoyo) -->
+		<ImageView
+			android:id="@+id/img_fondoCamara"
+			android:src="@drawable/fondo_camara"
+			android:layout_width="wrap_content"
+			android:layout_height="wrap_content"
+			android:layout_gravity="right"
+			android:scaleType="fitXY" />
+
+
+		<!-- Controles -->
+		<RelativeLayout
+			android:orientation="horizontal"
+			android:layout_width="fill_parent"
+			android:layout_height="fill_parent"
+			android:gravity="right|center"
+			android:layout_marginRight="45dp">
+
+			<LinearLayout
+				android:id="@+id/imageView1"
+				android:layout_height="wrap_content"
+				android:layout_width="wrap_content"
+				android:layout_alignParentBottom="true"
+				android:layout_centerHorizontal="true"
+				android:paddingLeft="10dp" />
+			<LinearLayout
+				android:id="@+id/imageView3"
+				android:layout_height="wrap_content"
+				android:layout_width="wrap_content"
+				android:layout_above="@+id/imageView2"
+				android:layout_alignLeft="@+id/imageView1"
+				android:layout_marginLeft="10dp" />
+			<LinearLayout
+				android:id="@+id/imageView5"
+				android:layout_height="wrap_content"
+				android:layout_width="wrap_content"
+				android:layout_above="@+id/imageView3"
+				android:layout_alignLeft="@+id/imageView3" />
+			<LinearLayout
+				android:id="@+id/imageView4"
+				android:layout_height="wrap_content"
+				android:layout_width="wrap_content"
+				android:layout_above="@+id/imageView1"
+				android:layout_alignRight="@+id/imageView5" />
+			<LinearLayout
+				android:id="@+id/imageView2"
+				android:layout_height="wrap_content"
+				android:layout_width="wrap_content"
+				android:layout_alignParentBottom="true"
+				android:layout_toRightOf="@+id/imageView3" />
+		</RelativeLayout>
+
+		<!-- punto debug <ImageView android:id="@+id/img_punto" android:src="@+drawable/rojo" 
+			android:layout_width="fill_parent" android:layout_height="fill_parent" android:scaleType="matrix" 
+			/> -->
+
+		<!-- spinner -->
+		<ProgressBar
+			android:id="@+id/spinner"
+			android:indeterminate="true"
+			android:layout_height="wrap_content"
+			android:layout_width="wrap_content"
+			android:layout_gravity="center|center" />
+
+
+
+	</FrameLayout>
+
+	<RelativeLayout
+		android:layout_height="fill_parent"
+		android:layout_width="fill_parent">
+		<!-- <ImageView
+			android:src="@drawable/fb"
+			android:layout_height="wrap_content"
+			android:layout_width="wrap_content"
+			android:id="@+id/flecha_izq"
+			android:layout_alignParentBottom="true"
+			android:layout_centerHorizontal="true"></ImageView>
+		<ImageView
+			android:src="@drawable/fb"
+			android:layout_height="wrap_content"
+			android:layout_width="wrap_content"
+			android:id="@+id/flecha_der"
+			android:layout_alignParentTop="true"
+			android:layout_centerHorizontal="true"></ImageView>-->
+		<LinearLayout
+			android:id="@+id/flecha_izq"
+			android:layout_height="wrap_content"
+			android:layout_width="wrap_content"
+			android:layout_alignParentBottom="true"
+			android:layout_centerHorizontal="true" />
+		<LinearLayout
+			android:id="@+id/flecha_der"
+			android:layout_height="wrap_content"
+			android:layout_width="wrap_content"
+			android:layout_alignParentTop="true"
+			android:layout_centerHorizontal="true" />
+	</RelativeLayout>
+
+
+
+
+
+
+</RelativeLayout>

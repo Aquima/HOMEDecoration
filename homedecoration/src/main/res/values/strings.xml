@@ -2,7 +2,8 @@
 <resources>
 
     <string name="app_name">HOMEDecoración</string>
-    <string name="dummy_button">Dummy Button</string>
+    <string name="dummy_button">Cancelar</string>
     <string name="dummy_content">DUMMY\nCONTENT</string>
 
+    <string name="hello">Hello World, SplashScreen!</string>
 </resources>
